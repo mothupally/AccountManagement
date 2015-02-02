@@ -1,0 +1,12 @@
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.dll.config
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.dll
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.pdb
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.csprojResolveAssemblyReference.cache
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.dll
+C:\Users\v-rraje\Documents\Visual Studio 2013\Projects\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.pdb
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.dll.config
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\bin\AngularJSStartupSkeleton.Web.pdb
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.csprojResolveAssemblyReference.cache
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.Web\obj\Debug\AngularJSStartupSkeleton.Web.pdb
