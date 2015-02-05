@@ -7,12 +7,12 @@ using AngularJS.WebAPI.Models;
 using AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider;
 namespace AngularJSStartupSkeleton.WebAPI.DataProvider
 {
-    public interface IUserProvider 
+    public interface IAccountProvider 
     {
-        public bool Add(User user);
-        public bool Delete(User user);
-        public bool Update(User user);
-        public User Find(string id);
-        public User Find(string email);
+        public bool Add(Account user);
+        public bool Delete(Account user);
+        public bool Update(Account user);
+        public Account Find(string id);
+        public Account Find(string email);
     }
 }

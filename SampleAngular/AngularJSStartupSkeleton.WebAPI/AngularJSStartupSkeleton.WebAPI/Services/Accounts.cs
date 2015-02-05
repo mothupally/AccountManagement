@@ -8,7 +8,7 @@ using AngularJS.WebAPI.Interfaces;
 
 namespace AngularJS.WebAPI.Services
 {
-    public class Accounts : IAccounts
+    public class Accounts : IAccount
     {
 
         public string Login(Users users)

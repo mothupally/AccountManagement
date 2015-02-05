@@ -15,40 +15,40 @@ namespace AngularJS.WebAPI.Controllers
     [RoutePrefix("api/accounts")]
     public class AccountsController : ApiController
     {
-        private IAccounts IAccounts;
-        private IUserProvider userProvider;
+        private IAccount IAccounts;
+        private IAccountProvider userProvider;
         private ConnectionManager manager;
-        public AccountsController(IAccounts _IAccounts)
+        public AccountsController()
         {
-            IAccounts = _IAccounts;
-            manager = new ConnectionManager(ConfigurationManager.AppSettings["ConnectionManager"]);
-            userProvider = UserFactory.CreateUserProvider(ConfigurationManager.AppSettings["providerType"],manager);
+            
+            //manager = new ConnectionManager(ConfigurationManager.AppSettings["ConnectionManager"]);
+            userProvider = AccountFactory.CreateUserProvider(ConfigurationManager.AppSettings["providerType"],manager);
         }
 
         [HttpGet]
         [Route("User")]
-        public List<User> User()
+        public List<Account> User()
         {
             return null;
         }
 
         [HttpGet]
         [Route("login")]
-        public string Login(User User)
+        public string Login(Account User)
         {
             return "value";
         }
 
         [HttpPost]
         [Route("signup")]
-        public void SignUp([FromBody]User user)
+        public void SignUp([FromBody]Account user)
         {
             bool isSuccess = userProvider.Add(user);
         }
 
         [HttpPost]
         [Route("contact")]
-        public void Contact([FromBody]User value)
+        public void Contact([FromBody]Account value)
         {
 
         }

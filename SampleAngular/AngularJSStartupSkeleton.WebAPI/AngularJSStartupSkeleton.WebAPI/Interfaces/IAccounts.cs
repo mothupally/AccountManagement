@@ -7,7 +7,7 @@ using AngularJS.WebAPI.Models;
 
 namespace AngularJS.WebAPI.Interfaces
 {
-    public interface IAccounts
+    public interface IAccount
     {
          string Login(Users users);
          Users SignUp(Users users);
