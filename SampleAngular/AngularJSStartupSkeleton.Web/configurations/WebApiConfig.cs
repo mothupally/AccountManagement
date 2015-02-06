@@ -14,7 +14,9 @@ namespace AngularJSStartupSkeleton.Web
     {
         public static void Register(HttpConfiguration config)
         {
-            config.MapHttpAttributeRoutes();
+            config.MapHttpAttributeRoutes(); 
+
+
             //  load apis from another assembly using CustomAssemblyResolver
             string uriLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
             string uriPath = string.Format("{0}\\AngularJSStartupSkeleton.WebAPI.dll", uriLocation);
