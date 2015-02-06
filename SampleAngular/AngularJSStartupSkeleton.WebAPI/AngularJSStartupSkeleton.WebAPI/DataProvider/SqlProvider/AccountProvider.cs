@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using AngularJS.WebAPI.Models;
+using AngularJSStartupSkeleton.WebAPI.Models;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data;
@@ -46,14 +46,14 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider.SqlProvider
             return true;
         }
 
-        public Account Find(string id)
+        public Account Find(object id)
         {
             return null;
         }
 
-        public Account Find(string email)
-        {
-            return null;
-        }
+        //public Account Find(string email)
+        //{
+        //    return null;
+        //}
     }
 }

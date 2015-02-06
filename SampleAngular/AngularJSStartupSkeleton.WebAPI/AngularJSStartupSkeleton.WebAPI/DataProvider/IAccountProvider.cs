@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AngularJS.WebAPI.Models;
+using AngularJSStartupSkeleton.WebAPI.Models;
+using MongoDB.Bson;
 using AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider;
 namespace AngularJSStartupSkeleton.WebAPI.DataProvider
 {
     public interface IAccountProvider 
     {
-        public bool Add(Account user);
-        public bool Delete(Account user);
-        public bool Update(Account user);
-        public Account Find(string id);
-        public Account Find(string email);
+         bool Add(Account user);
+         bool Delete(Account user);
+         bool Update(Account user);
+         Account Find(object id);
+       // public Account Find(string email);
     }
 }

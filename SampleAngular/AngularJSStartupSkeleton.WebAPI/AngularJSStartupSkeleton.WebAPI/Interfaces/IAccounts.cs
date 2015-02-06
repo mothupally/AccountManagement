@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AngularJS.WebAPI.Models;
+using AngularJSStartupSkeleton.WebAPI.Models;
 
-namespace AngularJS.WebAPI.Interfaces
+namespace AngularJSStartupSkeleton.WebAPI.Interfaces
 {
     public interface IAccount
     {
-         string Login(Users users);
-         Users SignUp(Users users);
-         string ForgotPassword(Users users);
-         string Contact(Users users);
+         string Login(Account users);
+         Account SignUp(Account users);
+         string ForgotPassword(Account users);
+         string Contact(Account users);
     }
 }

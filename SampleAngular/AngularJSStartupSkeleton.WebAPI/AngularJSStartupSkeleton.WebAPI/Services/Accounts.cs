@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AngularJS.WebAPI.Models;
-using AngularJS.WebAPI.Interfaces;
+using AngularJSStartupSkeleton.WebAPI.Models;
+using AngularJSStartupSkeleton.WebAPI.Interfaces;
 
 namespace AngularJS.WebAPI.Services
 {
     public class Accounts : IAccount
     {
 
-        public string Login(Users users)
+        public string Login(Account users)
         {
             throw new NotImplementedException();
         }
 
-        public Users SignUp(Users users)
+        public Account SignUp(Account users)
         {
             throw new NotImplementedException();
         }
 
-        public string ForgotPassword(Users users)
+        public string ForgotPassword(Account users)
         {
             throw new NotImplementedException();
         }
 
-        public string Contact(Users users)
+        public string Contact(Account users)
         {
             throw new NotImplementedException();
         }

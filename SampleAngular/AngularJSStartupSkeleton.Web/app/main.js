@@ -8,21 +8,19 @@
             });
 
     require(["./common/routeManager",
-            "./accounts/home/homeModule",
-            "./accounts/about/aboutModule",
-            "./accounts/contact/contactModule",
-            "./accounts/signup/signupModule",
-            "./accounts/login/loginModule",
+            "./accounts/accountsModule",
             "./layout/layoutModule"
     ],
             function (routeManager,
-                        homeModule,
-                        aboutModule,
-                        contactModule,
-                        signupModule,
-                        loginModule,
-                layoutModule
+                        accountsModule,
+                        layoutModule
                     ) {
+                var serviceBase = 'http://localhost:2693/';
+                var ngAuthSettings = {
+                    apiServiceBaseUri: serviceBase,
+                    clientId: 'ngAuthApp'
+                };
+
                 var appName = "myApp";
                 angular.module(
                                 appName,
@@ -30,14 +28,11 @@
                                 "ngCookies",
                                 "ui.router",
                                 "ngResource",
-                                homeModule,
-                                aboutModule,
-                                contactModule,
-                                signupModule,
-                                loginModule,
+                                accountsModule,
                                 layoutModule
                                 ])
-                        .config(routeManager);
+                        .config(routeManager)
+                        .constant(ngAuthSettings);
                 angular.bootstrap(document.getElementsByTagName("body")[0], [appName]);
             });
 }());

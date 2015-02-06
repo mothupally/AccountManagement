@@ -7,7 +7,7 @@ using MongoDB.Driver;
 using MongoDB.Driver.Builders;
 using MongoDB.Driver.GridFS;
 using MongoDB.Driver.Linq;
-using AngularJS.WebAPI.Models;
+using AngularJSStartupSkeleton.WebAPI.Models;
 namespace AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider
 {
     public class AccountProvider : IAccountProvider
@@ -40,18 +40,19 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider
             return true;
         }
 
-        public Account Find(string id)
+        public Account Find(object id)
         {
-            var query = Query<Account>.EQ(e => e.Id, id);
+            ObjectId accountGuid = (ObjectId)id;
+            var query = Query<Account>.EQ(e => e.Id, accountGuid);
             var entity = userCollection.FindOne(query);
             return entity;
         }
 
-        public Account Find(string email)
-        {
-            var query = Query<Account>.EQ(e => e.EmailAddress, email);
-            var entity = userCollection.FindOne(query);
-            return entity;
-        }
+        //public Account Find(string email)
+        //{
+        //    var query = Query<Account>.EQ(e => e.EmailAddress, email);
+        //    var entity = userCollection.FindOne(query);
+        //    return entity;
+        //}
     }
 }

@@ -16,7 +16,7 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider
             switch (providerType.ToUpper())
             {
                 case "MONGO":
-                    userProvider = new Mongo.AccountProvider(ConfigurationManager.AppSettings["ConnectionManager"], ConfigurationManager.AppSettings["database"]);
+                    userProvider = new Mongo.AccountProvider(ConfigurationManager.AppSettings["ConnectionManager"], ConfigurationManager.AppSettings["MongoDatabase"]);
                     break;
                 case "SQL":
                     userProvider = new Sql.AccountProvider(ConfigurationManager.AppSettings["ConnectionManager"], ConfigurationManager.AppSettings["TimeOut"]);

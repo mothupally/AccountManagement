@@ -12,3 +12,42 @@ c:\users\v-rraje\documents\visual studio 2013\Projects\AngularJSStartupSkeleton.
 c:\users\v-rraje\documents\visual studio 2013\Projects\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.csprojResolveAssemblyReference.cache
 c:\users\v-rraje\documents\visual studio 2013\Projects\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.dll
 c:\users\v-rraje\documents\visual studio 2013\Projects\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.pdb
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.pdb
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\AngularJSStartupSkeleton.WebAPI.dll.config
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\AngularJSStartupSkeleton.WebAPI.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\AngularJSStartupSkeleton.WebAPI.pdb
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\EntityFramework.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\MongoDB.Bson.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\MongoDB.Driver.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Newtonsoft.Json.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Owin.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.Owin.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\EntityFramework.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\MongoDB.Bson.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\MongoDB.Driver.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.Owin.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\Newtonsoft.Json.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Practise\SampleAngular\SampleAngular\AngularJSStartupSkeleton.WebAPI\AngularJSStartupSkeleton.WebAPI\obj\Debug\AngularJSStartupSkeleton.WebAPI.csprojResolveAssemblyReference.cache

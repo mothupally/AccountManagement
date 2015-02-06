@@ -15,12 +15,11 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider
     public static class ConnectionManager
     {
 
-        public string connectionString;
         public static MongoClient _client;
         public static MongoServer _server;
         public static string _database;
         public static string _providerType;
-        public static object obj;
+        public static object obj = new object();
 
 
         public static MongoDatabase MongoDb(string connectionString,string database) 

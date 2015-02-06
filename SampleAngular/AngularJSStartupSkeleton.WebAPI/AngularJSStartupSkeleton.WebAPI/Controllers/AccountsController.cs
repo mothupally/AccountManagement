@@ -1,5 +1,5 @@
-﻿using AngularJS.WebAPI.Interfaces;
-using AngularJS.WebAPI.Models;
+﻿using AngularJSStartupSkeleton.WebAPI.Interfaces;
+using AngularJSStartupSkeleton.WebAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,12 +17,10 @@ namespace AngularJS.WebAPI.Controllers
     {
         private IAccount IAccounts;
         private IAccountProvider userProvider;
-        private ConnectionManager manager;
+        
         public AccountsController()
         {
-            
-            //manager = new ConnectionManager(ConfigurationManager.AppSettings["ConnectionManager"]);
-            userProvider = AccountFactory.CreateUserProvider(ConfigurationManager.AppSettings["providerType"],manager);
+            userProvider = AccountFactory.CreateAccountProvider(ConfigurationManager.AppSettings["providerType"]);
         }
 
         [HttpGet]
@@ -43,6 +41,7 @@ namespace AngularJS.WebAPI.Controllers
         [Route("signup")]
         public void SignUp([FromBody]Account user)
         {
+            
             bool isSuccess = userProvider.Add(user);
         }
 

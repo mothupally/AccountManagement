@@ -39,9 +39,7 @@
                     templateUrl: "./app/accounts/signup/signup.html",
                     controller: "signupController"
                 })
-
         };
         return ['$stateProvider', routeManager];
     });
-
 }());
