@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="142e9beec4cf485195056e36aa49b781" Name="Diagram1">
+        <EntityTypeShape EntityType="AccountMgtDBModel.User_Account" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountMgtDBModel.User_Contacts" Width="1.5" PointX="4.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountMgtDBModel.User_Details" Width="1.5" PointX="2.5" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="AccountMgtDBModel.FK_User_Account_User_Details" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

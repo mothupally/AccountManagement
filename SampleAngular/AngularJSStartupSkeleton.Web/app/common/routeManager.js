@@ -34,6 +34,12 @@
                     controller: "contactController"
                 })
             .state(
+                "settings", {
+                    url: "/settings",
+                    templateUrl: "./app/accounts/mysettings/usersettings.html",
+                    controller: "usersettingsController"
+                })
+            .state(
                 "signup", {
                     url: "/signup",
                     templateUrl: "./app/accounts/signup/signup.html",

@@ -3,9 +3,10 @@
 
     define(["./contact/contactController", "./signup/signupController",
         "./login/loginController", "./about/aboutController",
-        "./home/homeController", "./accountsDataProvider"],
+        "./home/homeController", "./mysettings/usersettingsController", "./accountsDataProvider"],
         function (contactController, signupController,
-            loginController, aboutController, homeController, accountsDataProvider) {
+            loginController, aboutController, homeController,
+            usersettingsController, accountsDataProvider) {
 
             var moduleName = "myApp.accountsModule";
             angular
@@ -15,6 +16,7 @@
                 .controller("loginController", loginController)
                 .controller("aboutController", aboutController)
                 .controller("homeController", homeController)
+                .controller("usersettingsController", usersettingsController)
                 .factory("accountsDataProvider", accountsDataProvider);
             return moduleName;
         });

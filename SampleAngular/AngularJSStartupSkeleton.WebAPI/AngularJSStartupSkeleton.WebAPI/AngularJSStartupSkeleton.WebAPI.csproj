@@ -16,9 +16,9 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,6 +81,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -114,6 +116,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AccountMgtDB.mdf" />
+    <Content Include="App_Data\AccountMgtDB_log.ldf">
+      <DependentUpon>AccountMgtDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,13 +135,54 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\IAccounts.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountContacts.cs" />
+    <Compile Include="Models\AccountDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Accounts.cs" />
+    <Compile Include="SQLDBContext\AccountMgtDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountMgtDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBContext\AccountMgtDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountMgtDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBContext\AccountMgtDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountMgtDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBContext\User_Account.cs">
+      <DependentUpon>AccountMgtDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBContext\User_Contacts.cs">
+      <DependentUpon>AccountMgtDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDBContext\User_Details.cs">
+      <DependentUpon>AccountMgtDB.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <EntityDeploy Include="SQLDBContext\AccountMgtDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AccountMgtDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="SQLDBContext\AccountMgtDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AccountMgtDB.edmx</DependentUpon>
+      <LastGenOutput>AccountMgtDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SQLDBContext\AccountMgtDB.edmx.diagram">
+      <DependentUpon>AccountMgtDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="SQLDBContext\AccountMgtDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AccountMgtDB.edmx</DependentUpon>
+      <LastGenOutput>AccountMgtDB.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,7 +191,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>

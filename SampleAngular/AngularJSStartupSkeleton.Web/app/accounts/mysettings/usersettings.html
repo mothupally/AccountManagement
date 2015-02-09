@@ -1,0 +1,42 @@
+﻿<div class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="page-header">
+                    <h1>Account Settings</h1>
+                </div>
+                <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+                    <div class="alert alert-success" ng-show="accountUpdated">Account Settings Updated Successfully.</div>
+                    <div class="form-group">
+                        <label>First Name:</label>
+                        <input type="text" name="firstName" class="form-control" ng-model="userDetails.firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Middle Name:</label>
+                        <input type="text" name="middleName" class="form-control" ng-model="userDetails.middleName">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name:</label>
+                        <input type="text" name="lastName" class="form-control" ng-model="userDetails.lastName">
+                    </div>
+                    <div class="form-group">
+                        <label>Company Name:</label>
+                        <input type="text" name="companyName" class="form-control" ng-model="userDetails.companyName">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone:</label>
+                        <input type="text" name="phone" class="form-control" ng-model="userDetails.phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Zip:</label>
+                        <input type="text" name="zip" class="form-control" ng-model="userDetails.zip">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-login">Update Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

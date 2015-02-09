@@ -10,6 +10,7 @@
         <form name="userForm" ng-submit="submitForm()" novalidate>
 
             <div class="alert alert-success" ng-hide="accountCreated">Account created successfully.</div>
+            <div class="alert alert-error" ng-hide="accountExists">Account Already Exists.</div>
 
             <!-- USERNAME -->
             <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && (userForm.username.$dirty || submitted)}">

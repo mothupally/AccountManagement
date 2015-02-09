@@ -39,6 +39,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AngularJSStartupSkeleton.WebAPI\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\AngularJSStartupSkeleton.WebAPI\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -96,6 +103,8 @@
   <ItemGroup>
     <Content Include="app\accounts\accountsDataProvider.js" />
     <Content Include="app\accounts\accountsModule.js" />
+    <Content Include="app\accounts\mysettings\usersettings.html" />
+    <Content Include="app\accounts\mysettings\usersettingsController.js" />
     <Content Include="vendor\angularjs\Scripts\angular-animate.min.js.map" />
     <Content Include="vendor\angularjs\Scripts\angular-cookies.min.js.map" />
     <Content Include="vendor\angularjs\Scripts\angular-loader.min.js.map" />
@@ -112,6 +121,7 @@
     <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="vendor\jQuery\Scripts\jquery-2.1.1.min.map" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -495,7 +505,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\accounts\accountsRepository\" />
     <Folder Include="models\" />
   </ItemGroup>
   <ItemGroup>

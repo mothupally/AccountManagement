@@ -12,14 +12,12 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider
 {
     public class AccountProvider : IAccountProvider
     {
-
-        
         public MongoCollection<Account> userCollection;
 
-        public AccountProvider(string connectionString,string database)
+        public AccountProvider(string connectionString, string database)
         {
 
-            userCollection = ConnectionManager.MongoDb(connectionString,database).GetCollection<Account>("User");
+            userCollection = ConnectionManager.MongoDb(connectionString, database).GetCollection<Account>("User");
         }
         public bool Add(Account user)
         {
@@ -53,6 +51,26 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider.MongoProvider
         //    var query = Query<Account>.EQ(e => e.EmailAddress, email);
         //    var entity = userCollection.FindOne(query);
         //    return entity;
-        //}
+        //}m
+
+        public bool AddContact(AccountContacts accountContacts)
+        {
+            throw new NotImplementedException();
+        }
+
+        public AccountDetails UserLogin(Account user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateUserDetails(AccountDetails accountDetails)
+        {
+            throw new NotImplementedException();
+        }
+
+        public AccountDetails GetUserDetails(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

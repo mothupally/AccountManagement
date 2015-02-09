@@ -8,20 +8,20 @@
 
             $scope.submitForm = function () {
                 if ($scope.userForm.$valid) {
-                    
                     accountsDataProvider.userSignUp($scope.user).$promise.then(function (data) {
-                        console.log(data);
-                        $scope.accountCreated = false;
+                        if (data) {
+                            $scope.accountCreated = false;
+                        }
+                        else {
+                            $scope.accountExists = false;
+                        }
                     });
-
-                }
-                else {
-                    alert("Please correct errors!");
                 }
             };
 
             var initialize = function () {
                 $scope.accountCreated = true;
+                $scope.accountExists = true;
             }
 
             initialize();

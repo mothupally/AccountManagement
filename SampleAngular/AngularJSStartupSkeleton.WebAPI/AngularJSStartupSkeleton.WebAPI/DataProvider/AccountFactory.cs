@@ -12,7 +12,7 @@ namespace AngularJSStartupSkeleton.WebAPI.DataProvider
     {
         public static IAccountProvider CreateAccountProvider(string providerType)
         {
-            IAccountProvider userProvider=null;
+            IAccountProvider userProvider = null;
             switch (providerType.ToUpper())
             {
                 case "MONGO":
